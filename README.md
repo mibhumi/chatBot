@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 🤖 ChatBot Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend part** of a ChatBot application.  
+You can ask **anything** and the chatbot will give you a reply! 🗨️✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
 
-## React Compiler
+- **React** (v19.2.0) ⚛️  
+- **TailwindCSS** (v4.1.18) 🎨  
+- **Vite** for fast development ⚡  
+- **TypeScript** for type safety 💻  
+- **React Markdown** to render messages in Markdown 📝  
+- **dotenv** for environment variables 🌱  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the frontend repo:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/mibhumi/chatBot.git
+cd chatBot
+npm install
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Start development server
+```bash
+npm run dev
 ```
+3. Open your browser at http://localhost:5173 to see the chatbot in action! 🌐
+
+⚠️ Important: Don’t forget to clone the backend repo as well and update the API call path in the frontend so the chatbot can communicate with the backend. 🔗
+
+📝 Available Scripts
+
+npm run dev → Start the development server
+npm run build → Build the app for production
+npm run preview → Preview the production build
+npm run lint → Run ESLint to check code quality
+
+💡 Features
+
+Ask questions to the chatbot 🤔
+Receive instant replies 💬
+Simple and clean UI 🎨
+Fully responsive design 📱
+
+⚡ Future Enhancements
+
+Add voice input 🎤
+Save chat history 📖
+Improve UI animations ✨
