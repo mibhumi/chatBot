@@ -52,3 +52,6 @@ Fully responsive design 📱
 Add voice input 🎤
 Save chat history 📖
 Improve UI animations ✨
+
+<img width="1436" height="702" alt="Screenshot 2026-02-13 at 5 22 25 PM" src="https://github.com/user-attachments/assets/626e77fa-7933-4137-bf69-0b8a08e49f5d" />
+
