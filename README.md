@@ -32,6 +32,9 @@ npm run dev
 3. Open your browser at http://localhost:5173 to see the chatbot in action! 🌐
 
 ⚠️ Important: Don’t forget to clone the backend repo as well and update the API call path in the frontend so the chatbot can communicate with the backend. 🔗
+Backend Setup
+For backend setup, please check out this GitHub link:
+Backend repo link: <https://github.com/mibhumi/chatbot-server/>
 
 📝 Available Scripts
 
